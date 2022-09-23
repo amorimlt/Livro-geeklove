@@ -1,0 +1,85 @@
+@import url(./reset.css);
+
+body{
+  background-color: #ffe433;
+  position: relative;
+  font-family: 'Rye', cursive;
+}
+
+body::before{
+  content: "";
+  background: url(Untitled111_20220922213118.png) no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (width <= 1000px){
+  body::before{
+    filter: opacity(.4);
+  }
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.skull{
+  position: absolute;
+}
+
+ul{
+  display: flex;
+  gap: 36px;
+  text-align: center;
+}
+
+@media(width <= 600px){
+  ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+ul > li{
+  font-size: 2rem;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-family:  'Staatliches', cursive;
+}
+
+a{
+  transition: .2s;
+}
+
+a:hover{
+  color: #65bdc0;
+}
+
+img{
+  min-width: 30%;
+  align-self: center;
+  padding: 56px 0;
+  transition: .1s;
+}
+
+img:hover{
+  filter: brightness(.9);
+}
